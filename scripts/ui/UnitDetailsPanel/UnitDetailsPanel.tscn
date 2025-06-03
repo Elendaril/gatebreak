@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxootk0std5le"]
+
+[ext_resource type="Script" uid="uid://wmwtxp7ltt12" path="res://scripts/ui/UnitDetailsPanel/UnitDetailsPanel.gd" id="1_em1sv"]
+
+[node name="UnitDetailsPanel" type="PanelContainer"]
+custom_minimum_size = Vector2(800, 600)
+script = ExtResource("1_em1sv")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="DetailsContent" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="MarginContainer/DetailsContent"]
+layout_mode = 2
+text = "Close"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/DetailsContent"]
+layout_mode = 2
+
+[node name="FullPortrait" type="TextureRect" parent="MarginContainer/DetailsContent/HBoxContainer"]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/DetailsContent/HBoxContainer"]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="MarginContainer/DetailsContent/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="LevelLabel" type="Label" parent="MarginContainer/DetailsContent/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/DetailsContent"]
+layout_mode = 2
+
+[node name="StatsLabel" type="Label" parent="MarginContainer/DetailsContent/HSeparator"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Stats"
+
+[node name="StatsGrid" type="GridContainer" parent="MarginContainer/DetailsContent"]
+layout_mode = 2
+columns = 2
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/DetailsContent"]
+layout_mode = 2
+
+[node name="Skills_abilities" type="Label" parent="MarginContainer/DetailsContent"]
+layout_mode = 2
+text = "Skills / Abilities"

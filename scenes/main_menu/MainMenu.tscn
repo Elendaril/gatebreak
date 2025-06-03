@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://0xyor0x7avnv"]
+
+[ext_resource type="Script" uid="uid://dp5sku778m037" path="res://scenes/main_menu/MainMenu.gd" id="1_isws5"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_isws5")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+offset_right = 1928.0
+offset_bottom = 1081.0
+
+[node name="MenuButtons" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="StartButton" type="Button" parent="CenterContainer/MenuButtons"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Start New Game"
+
+[node name="LoadButton" type="Button" parent="CenterContainer/MenuButtons"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Load Game"
+
+[node name="ExitButton" type="Button" parent="CenterContainer/MenuButtons"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Exit"

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="UnitStats" load_steps=4 format=3 uid="uid://burudntiw3i31"]
+
+[ext_resource type="Texture2D" uid="uid://bar4d46438hnh" path="res://resources/art/units/hunters/portraits/sayumi_portrait_md.png" id="1_1r15j"]
+[ext_resource type="Texture2D" uid="uid://duq306cqo1ubu" path="res://resources/art/units/hunters/portraits/sayumi_portrait_sm.png" id="2_ao3w7"]
+[ext_resource type="Script" uid="uid://b7u4gyt14g731" path="res://scripts/enities/UnitStats.gd" id="3_nsqnf"]
+
+[resource]
+script = ExtResource("3_nsqnf")
+unit_name = "Lisa"
+description = "Brusier"
+portrait = ExtResource("1_1r15j")
+portrait_thumbnail = ExtResource("2_ao3w7")
+unit_class = "Warrior"
+base_hp = 26
+base_mp = 10
+strength = 8
+accuracy = 6
+vitality = 8
+intelligence = 5
+spirit = 5
+speed = 5
+luck = 2
+hp_growth = 80
+mp_growth = 20
+str_growth = 65
+acc_growth = 30
+vit_growth = 65
+int_growth = 25
+spr_growth = 25
+spd_growth = 25
+lck_growth = 10
+can_scout = false
+metadata/_custom_type_script = "uid://b7u4gyt14g731"

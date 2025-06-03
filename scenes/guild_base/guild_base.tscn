@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://csysdsjuug7jf"]
+
+[ext_resource type="Texture2D" uid="uid://ckx4oc87t8y01" path="res://resources/art/main_base2.jpg" id="1_7ygst"]
+[ext_resource type="Script" uid="uid://dleb2g5b5jj1f" path="res://scenes/guild_base/GuildBase.gd" id="1_x7w21"]
+[ext_resource type="PackedScene" uid="uid://cxootk0std5le" path="res://scripts/ui/UnitDetailsPanel/UnitDetailsPanel.tscn" id="3_2nv0h"]
+
+[node name="GuildBase" type="Node2D"]
+script = ExtResource("1_x7w21")
+
+[node name="MainBase2" type="Sprite2D" parent="."]
+position = Vector2(990.958, 540.25)
+scale = Vector2(0.704102, 0.704102)
+texture = ExtResource("1_7ygst")
+
+[node name="UnitListPanel" type="PanelContainer" parent="."]
+visible = false
+custom_minimum_size = Vector2(400, 600)
+offset_left = 1587.0
+offset_top = 236.0
+offset_right = 1987.0
+offset_bottom = 836.0
+
+[node name="MarginContainer" type="MarginContainer" parent="UnitListPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UnitListPanel/MarginContainer"]
+layout_mode = 2
+
+[node name="UnitListContent" type="VBoxContainer" parent="UnitListPanel/MarginContainer/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="RosterButton" type="Button" parent="."]
+offset_left = 1710.0
+offset_top = 1012.0
+offset_right = 1887.0
+offset_bottom = 1057.0
+text = "Units"
+
+[node name="UnitDetailsPanel" parent="." instance=ExtResource("3_2nv0h")]
+visible = false
+offset_left = 606.0
+offset_top = 192.0
+offset_right = 1406.0
+offset_bottom = 792.0

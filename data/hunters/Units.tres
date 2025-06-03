@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="UnitStats" load_steps=4 format=3 uid="uid://s6ijuu84lg4u"]
+
+[ext_resource type="Texture2D" uid="uid://bwu8c6rtmf8h2" path="res://resources/art/units/hunters/portraits/placeholder.png" id="1_2q1ir"]
+[ext_resource type="Texture2D" uid="uid://knftrx0h16tc" path="res://resources/art/units/hunters/portraits/placeholder_thumbnail.png" id="2_g320j"]
+[ext_resource type="Script" uid="uid://b7u4gyt14g731" path="res://scripts/enities/UnitStats.gd" id="3_n3iid"]
+
+[resource]
+script = ExtResource("3_n3iid")
+unit_name = "Rin"
+description = "Your right hand in guild operation."
+portrait = ExtResource("1_2q1ir")
+portrait_thumbnail = ExtResource("2_g320j")
+unit_class = "Warrior"
+base_hp = 12
+base_mp = 10
+strength = 5
+accuracy = 5
+vitality = 4
+intelligence = 5
+spirit = 5
+speed = 5
+luck = 2
+hp_growth = 20
+mp_growth = 20
+str_growth = 30
+acc_growth = 15
+vit_growth = 35
+int_growth = 25
+spr_growth = 25
+spd_growth = 10
+lck_growth = 5
+can_scout = false
+metadata/_custom_type_script = "uid://b7u4gyt14g731"

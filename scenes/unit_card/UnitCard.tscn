@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq0435w6e8rfa"]
+
+[ext_resource type="Script" uid="uid://dj7lnpwcdynd6" path="res://scenes/unit_card/UnitCard.gd" id="1_kmhum"]
+[ext_resource type="Texture2D" uid="uid://knftrx0h16tc" path="res://resources/art/units/hunters/portraits/placeholder_thumbnail.png" id="2_3vg7o"]
+
+[node name="UnitCard" type="PanelContainer"]
+script = ExtResource("1_kmhum")
+
+[node name="ContentContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="PortraitThumbnail" type="TextureRect" parent="ContentContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("2_3vg7o")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="InfoVBox" type="VBoxContainer" parent="ContentContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[node name="NameLabel" type="Label" parent="ContentContainer/InfoVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Unit Name"
+
+[node name="LevelLabel" type="Label" parent="ContentContainer/InfoVBox"]
+layout_mode = 2
+text = "Lvl: 1"
+
+[node name="HPBarContainer" type="HBoxContainer" parent="ContentContainer/InfoVBox"]
+visible = false
+layout_mode = 2
+
+[node name="HPTextPrefix" type="Label" parent="ContentContainer/InfoVBox/HPBarContainer"]
+visible = false
+layout_mode = 2
+text = "HP:"
+
+[node name="HPProgressBar" type="ProgressBar" parent="ContentContainer/InfoVBox/HPBarContainer"]
+visible = false
+layout_mode = 2
+
+[node name="HPTextValue" type="Label" parent="ContentContainer/InfoVBox/HPBarContainer"]
+visible = false
+layout_mode = 2
+text = "100/100"
