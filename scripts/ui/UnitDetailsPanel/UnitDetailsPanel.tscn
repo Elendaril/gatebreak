@@ -1,12 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxootk0std5le"]
+[gd_scene load_steps=3 format=3 uid="uid://cxootk0std5le"]
 
 [ext_resource type="Script" uid="uid://wmwtxp7ltt12" path="res://scripts/ui/UnitDetailsPanel/UnitDetailsPanel.gd" id="1_em1sv"]
+[ext_resource type="Texture2D" uid="uid://bwu8c6rtmf8h2" path="res://resources/art/units/hunters/portraits/placeholder.png" id="2_xpahv"]
 
 [node name="UnitDetailsPanel" type="PanelContainer"]
 custom_minimum_size = Vector2(800, 600)
+offset_right = 1094.0
+offset_bottom = 604.0
 script = ExtResource("1_em1sv")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(800, 0)
 layout_mode = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
@@ -18,26 +22,35 @@ layout_mode = 2
 
 [node name="CloseButton" type="Button" parent="MarginContainer/DetailsContent"]
 layout_mode = 2
-text = "Close"
+size_flags_horizontal = 8
+text = "CLOSE"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/DetailsContent"]
 layout_mode = 2
+theme_override_constants/separation = 30
 
 [node name="FullPortrait" type="TextureRect" parent="MarginContainer/DetailsContent/HBoxContainer"]
 custom_minimum_size = Vector2(256, 256)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("2_xpahv")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/DetailsContent/HBoxContainer"]
 layout_mode = 2
 
 [node name="NameLabel" type="Label" parent="MarginContainer/DetailsContent/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+vertical_alignment = 1
 
 [node name="LevelLabel" type="Label" parent="MarginContainer/DetailsContent/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
 [node name="HSeparator" type="HSeparator" parent="MarginContainer/DetailsContent"]
 layout_mode = 2
+theme_override_constants/separation = 40
 
 [node name="StatsLabel" type="Label" parent="MarginContainer/DetailsContent/HSeparator"]
 layout_mode = 0
@@ -47,10 +60,13 @@ text = "Stats"
 
 [node name="StatsGrid" type="GridContainer" parent="MarginContainer/DetailsContent"]
 layout_mode = 2
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 5
 columns = 2
 
 [node name="HSeparator2" type="HSeparator" parent="MarginContainer/DetailsContent"]
 layout_mode = 2
+theme_override_constants/separation = 20
 
 [node name="Skills_abilities" type="Label" parent="MarginContainer/DetailsContent"]
 layout_mode = 2

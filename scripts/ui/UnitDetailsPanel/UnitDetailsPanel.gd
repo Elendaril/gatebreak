@@ -6,6 +6,7 @@ signal panel_closed
 # --- Core Info ---
 @onready var full_portrait_rect: TextureRect = $MarginContainer/DetailsContent/HBoxContainer/FullPortrait # Adjust path
 @onready var name_label: Label = $MarginContainer/DetailsContent/HBoxContainer/VBoxContainer/NameLabel # Adjust path
+@onready var level_label: Label = $MarginContainer/DetailsContent/HBoxContainer/VBoxContainer/LevelLabel
 # ... (@onready vars for XP bar & text) ...
 
 # --- Stats & Growths ---
@@ -29,12 +30,12 @@ func display_unit_details(unit_data: RuntimeUnit):
 
 	name_label.text = current_unit_data.display_name
 	#class_label.text = "Class: %s" % current_unit_data.current_class_instance.class_name
-	#level_label.text = "Level: %d (XP: %d/%d)" % [current_unit_data.current_level, current_unit_data.current_xp, get_xp_for_next_level(current_unit_data.current_level)] # You'll need get_xp_for_next_level()
+	level_label.text = "Level: 1"
 
 	if current_unit_data.unit_stats_instance.portrait:
 		full_portrait_rect.texture = current_unit_data.unit_stats_instance.portrait
 	else:
-		full_portrait_rect.texture = null # Or a default placeholder
+		full_portrait_rect.texture = preload("res://resources/art/units/hunters/portraits/placeholder.png")
 
 	# Populate Stats Grid
 	_populate_grid(stats_grid, _get_display_stats())

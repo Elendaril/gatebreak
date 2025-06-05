@@ -43,7 +43,8 @@ text = "Units"
 
 [node name="UnitDetailsPanel" parent="." instance=ExtResource("3_2nv0h")]
 visible = false
-offset_left = 606.0
-offset_top = 192.0
-offset_right = 1406.0
-offset_bottom = 792.0
+custom_minimum_size = Vector2(1200, 600)
+offset_left = 166.0
+offset_top = 86.0
+offset_right = 1366.0
+offset_bottom = 973.0

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DungeonData" load_steps=3 format=3 uid="uid://cx8e2yikhp71x"]
+
+[ext_resource type="Texture2D" uid="uid://bg4rlndfi5cus" path="res://resources/portal_icon.png" id="1_nuj5x"]
+[ext_resource type="Script" uid="uid://bwa31tl3m8cna" path="res://scripts/resources/DungeonData.gd" id="2_s3c38"]
+
+[resource]
+script = ExtResource("2_s3c38")
+dungeon_name = "Mysterious Dungeon"
+description = "A brief description of this dungeon."
+overworld_icon = ExtResource("1_nuj5x")
+can_be_escaped = true
+theme = 0
+recommended_level = 1
+rooms = Array[Resource]([])
+starting_room_id = "room_0"
+metadata/_custom_type_script = "uid://bwa31tl3m8cna"
