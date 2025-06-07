@@ -1,0 +1,97 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpjdx5nru4hg2"]
+
+[ext_resource type="Script" uid="uid://mxnyelh8k3kj" path="res://scenes/dungeon/CombatManager.gd" id="1_sdcou"]
+[ext_resource type="Texture2D" uid="uid://c14aoirm1nfp2" path="res://resources/art/dungeon/dungeon_background.png" id="2_8hcrj"]
+[ext_resource type="PackedScene" uid="uid://dup0fxkm2hh06" path="res://scenes/dungeon/UnitCombatSlot.tscn" id="3_vw6u6"]
+
+[node name="CombatEncounter" type="Node2D"]
+script = ExtResource("1_sdcou")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(959, 524)
+scale = Vector2(1.2627, 1.2627)
+texture = ExtResource("2_8hcrj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI_Layer" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Player Grid" type="GridContainer" parent="CanvasLayer/UI_Layer"]
+layout_mode = 0
+offset_left = 262.0
+offset_top = 337.0
+offset_right = 686.0
+offset_bottom = 761.0
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 3
+
+[node name="UnitCombatSlot" parent="CanvasLayer/UI_Layer/Player Grid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot2" parent="CanvasLayer/UI_Layer/Player Grid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot3" parent="CanvasLayer/UI_Layer/Player Grid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot4" parent="CanvasLayer/UI_Layer/Player Grid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot5" parent="CanvasLayer/UI_Layer/Player Grid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot6" parent="CanvasLayer/UI_Layer/Player Grid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot7" parent="CanvasLayer/UI_Layer/Player Grid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot8" parent="CanvasLayer/UI_Layer/Player Grid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot9" parent="CanvasLayer/UI_Layer/Player Grid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="EnemyGrid" type="GridContainer" parent="CanvasLayer/UI_Layer"]
+layout_mode = 0
+offset_left = 1205.0
+offset_top = 335.0
+offset_right = 1629.0
+offset_bottom = 759.0
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 3
+
+[node name="UnitCombatSlot" parent="CanvasLayer/UI_Layer/EnemyGrid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot2" parent="CanvasLayer/UI_Layer/EnemyGrid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot3" parent="CanvasLayer/UI_Layer/EnemyGrid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot4" parent="CanvasLayer/UI_Layer/EnemyGrid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot5" parent="CanvasLayer/UI_Layer/EnemyGrid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot6" parent="CanvasLayer/UI_Layer/EnemyGrid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot7" parent="CanvasLayer/UI_Layer/EnemyGrid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot8" parent="CanvasLayer/UI_Layer/EnemyGrid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2
+
+[node name="UnitCombatSlot9" parent="CanvasLayer/UI_Layer/EnemyGrid" instance=ExtResource("3_vw6u6")]
+layout_mode = 2

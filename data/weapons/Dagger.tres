@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=7 format=3 uid="uid://p8mhi2n6nkxt"]
+
+[ext_resource type="Script" uid="uid://dofw52rcna27b" path="res://scripts/resources/ScalingUpgradeStep.gd" id="1_f2glx"]
+[ext_resource type="Script" uid="uid://bqwayok83frjr" path="res://scripts/resources/WeaponResource.gd" id="1_inj6l"]
+[ext_resource type="Script" uid="uid://dxk23axwtcgod" path="res://scripts/resources/StatScalingEntry.gd" id="2_erj7g"]
+
+[sub_resource type="Resource" id="Resource_8nc4f"]
+script = ExtResource("1_f2glx")
+stat_to_upgrade = 1
+required_reinforce_level = 3
+new_scaling_rank = 3
+metadata/_custom_type_script = "uid://dofw52rcna27b"
+
+[sub_resource type="Resource" id="Resource_erj7g"]
+script = ExtResource("2_erj7g")
+stat = 1
+rank = 2
+metadata/_custom_type_script = "uid://dxk23axwtcgod"
+
+[sub_resource type="Resource" id="Resource_f2glx"]
+script = ExtResource("2_erj7g")
+stat = 5
+rank = 1
+metadata/_custom_type_script = "uid://dxk23axwtcgod"
+
+[resource]
+script = ExtResource("1_inj6l")
+weapon_name = "Dagger"
+description = "Just a simple dagger"
+weapon_type = 2
+weapon_range = 0
+base_damage = 10
+crit_chance_bonus = 3
+attack_speed_modifier = 5
+stat_scaling = Array[ExtResource("2_erj7g")]([SubResource("Resource_erj7g"), SubResource("Resource_f2glx")])
+max_reinforce_level = 5
+damage_increase_per_level_percent = 0.1
+scaling_upgrade_path = Array[ExtResource("1_f2glx")]([SubResource("Resource_8nc4f")])
+required_level = 1
+required_strength = 0
+required_intelligence = 0
+required_accuracy = 0
+required_vitality = 0
+required_spirit = 0
+required_speed = 0
+required_luck = 0
+metadata/_custom_type_script = "uid://bqwayok83frjr"

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ActiveSkillResource" load_steps=2 format=3 uid="uid://cqeiprbbrw5p3"]
+
+[ext_resource type="Script" uid="uid://ityxhrfieqrq" path="res://scripts/resources/ActiveSkillResource.gd" id="1_d7xnt"]
+
+[resource]
+script = ExtResource("1_d7xnt")
+skill_name = "Power Attack"
+description = "Simple power attack"
+mp_cost = 4
+hp_cost = 0
+cooldown = 0
+target_type = 0
+target_scope = 0
+skill_range = 0
+damage_type = 0
+base_damage = 10
+power_multiplier = 1.0
+base_heal = 0
+heal_multiplier = 1.0
+damage_variance = 0.1
+metadata/_custom_type_script = "uid://ityxhrfieqrq"

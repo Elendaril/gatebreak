@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ActiveSkillResource" load_steps=2 format=3 uid="uid://bhjihsk8xm7j6"]
+
+[ext_resource type="Script" uid="uid://ityxhrfieqrq" path="res://scripts/resources/ActiveSkillResource.gd" id="1_3o6mx"]
+
+[resource]
+script = ExtResource("1_3o6mx")
+skill_name = "Minor Heal"
+description = "Just mintor heal"
+mp_cost = 5
+hp_cost = 0
+cooldown = 0
+target_type = 1
+target_scope = 0
+skill_range = 3
+damage_type = 4
+base_damage = 0
+power_multiplier = 1.0
+base_heal = 10
+heal_multiplier = 1.2
+damage_variance = 0.0
+metadata/_custom_type_script = "uid://ityxhrfieqrq"

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="EnemyStats" load_steps=5 format=3 uid="uid://b40bfxfly0lm6"]
+
+[ext_resource type="Texture2D" uid="uid://bsc7ok8evv786" path="res://resources/art/units/enemies/portraits/enemy_portrait_sm.png" id="1_8pkql"]
+[ext_resource type="Script" uid="uid://bqhrpcpn852hi" path="res://scripts/enities/EnemyStats.gd" id="1_klrlv"]
+[ext_resource type="Script" uid="uid://ityxhrfieqrq" path="res://scripts/resources/ActiveSkillResource.gd" id="2_uv5ad"]
+[ext_resource type="Resource" uid="uid://cqeiprbbrw5p3" path="res://data/skills/active/PowerAttack.tres" id="3_uv5ad"]
+
+[resource]
+script = ExtResource("1_klrlv")
+enemy_name = "New Enemy"
+description = ""
+portrait = ExtResource("1_8pkql")
+base_hp = 10
+base_mp = 4
+base_strength = 3
+base_accuracy = 3
+base_vitality = 3
+base_intelligence = 1
+base_spirit = 1
+base_speed = 2
+base_luck = 1
+hp_per_level = 2
+str_per_level = 1
+vit_per_level = 1
+skills = Array[ExtResource("2_uv5ad")]([ExtResource("3_uv5ad")])
+ai_type = 0
+metadata/_custom_type_script = "uid://bqhrpcpn852hi"

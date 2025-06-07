@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="EnemyStats" load_steps=5 format=3 uid="uid://dkdlwqbvrffsd"]
+
+[ext_resource type="Script" uid="uid://bqhrpcpn852hi" path="res://scripts/enities/EnemyStats.gd" id="1_p47q4"]
+[ext_resource type="Texture2D" uid="uid://bxb65p1brncbu" path="res://resources/art/units/enemies/portraits/enemy_portrait_md.png" id="1_ybfkw"]
+[ext_resource type="Script" uid="uid://ityxhrfieqrq" path="res://scripts/resources/ActiveSkillResource.gd" id="2_87kjh"]
+[ext_resource type="Resource" uid="uid://bhjihsk8xm7j6" path="res://data/skills/active/MinorHeal.tres" id="4_fi60e"]
+
+[resource]
+script = ExtResource("1_p47q4")
+enemy_name = "New Enemy"
+description = ""
+portrait = ExtResource("1_ybfkw")
+base_hp = 10
+base_mp = 0
+base_strength = 3
+base_accuracy = 3
+base_vitality = 3
+base_intelligence = 1
+base_spirit = 1
+base_speed = 2
+base_luck = 1
+hp_per_level = 2
+str_per_level = 1
+vit_per_level = 1
+skills = Array[ExtResource("2_87kjh")]([ExtResource("4_fi60e")])
+ai_type = 0
+metadata/_custom_type_script = "uid://bqhrpcpn852hi"

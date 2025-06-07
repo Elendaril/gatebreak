@@ -58,11 +58,25 @@ func overhit_to_crit_chance(hit_chance:int) -> int:
 
 # Weapons stat scaling for damage
 const SCALING_RANK_MULTIPLIERS = {
-	"S": 2.0,
-	"A": 1.6,
-	"B": 1.25,
-	"C": 1.0,
-	"D": 0.75,
+	"SSS": 3.0,
+	"SS": 2.7,
+	"S_PLUS": 2.3,
+	"S": 2.2,
+	"S_MINUS": 1.9,
+	"A_PLUS": 1.85,
+	"A": 1.8,
+	"A_MINUS": 1.6,
+	"B_PLUS": 1.55,
+	"B": 1.5,
+	"B_MINUS": 1.3,
+	"C_PLUS": 1.25,
+	"C": 1.2,
+	"C_MINUS": 1.0,
+	"D_PLUS": 0.9,
+	"D": 0.8,
+	"D_MINUS": 0.7,
+	"E_PLUS": 0.6,
 	"E": 0.5,
+	"E_MINUS": 0.4,
 	"F": 0.25
 }

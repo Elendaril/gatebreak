@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dup0fxkm2hh06"]
+
+[ext_resource type="Texture2D" uid="uid://knftrx0h16tc" path="res://resources/art/units/hunters/portraits/placeholder_thumbnail.png" id="1_dsqor"]
+
+[node name="UnitCombatSlot" type="PanelContainer"]
+custom_minimum_size = Vector2(128, 128)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_dsqor")
+
+[node name="ProgressBar" type="ProgressBar" parent="TextureRect"]
+layout_mode = 2
+offset_top = 101.0
+offset_right = 128.0
+offset_bottom = 128.0
+min_value = 100.0
+value = 100.0
